@@ -1,0 +1,50 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
+  tab_position = bottom
+  sticky = True
+[keybindings]
+  go_up = <Shift>Up
+  move_tab_left = <Primary><Shift>Left
+  next_tab = <Primary>Right
+  split_horiz = <Primary><Shift>h
+  move_tab_right = <Primary><Shift>Right
+  prev_tab = <Primary>Left
+  go_down = <Shift>Down
+  close_term = <Primary><Shift>c
+  split_vert = <Primary><Shift>v
+  go_right = <Shift>Right
+  new_tab = <Primary><Shift>n
+  go_left = <Shift>Left
+  go_next = <Primary><Shift>o
+  hide_window = F12
+[profiles]
+  [[default]]
+    background_image = None
+    font = Sans 10
+    scrollbar_position = hidden
+    foreground_color = "#ffffff"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      position = 0:24
+      type = Window
+      order = 0
+      parent = ""
+      size = 1679, 650
+    [[[child1]]]
+      position = 839
+      type = HPaned
+      order = 0
+      parent = child0
+    [[[terminal3]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child1
+    [[[terminal2]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child1
+[plugins]
