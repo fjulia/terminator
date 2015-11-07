@@ -1,0 +1,2 @@
+# terminator
+Terminator custom config
